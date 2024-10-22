@@ -1,4 +1,3 @@
-
 // Ejercicio 1: Condicionales if-else
 function verificarParImpar(numero) {
   if (numero % 2 === 0) {
@@ -7,7 +6,6 @@ function verificarParImpar(numero) {
     console.log("El número es impar");
   }
 }
-
 // Ejemplo de uso
 verificarParImpar(7);  // "El número es impar"
 verificarParImpar(10); // "El número es par"
@@ -22,7 +20,6 @@ function determinarCategoriaEdad(edad) {
     console.log("Adulto mayor");
   }
 }
-
 // Imprimir
 determinarCategoriaEdad(10);  // "Menor de edad"
 determinarCategoriaEdad(30);  // "Adulto"
@@ -35,7 +32,6 @@ function imprimirHastaCero(numero) {
     numero--;
   }
 }
-
 // Imprimir
 imprimirHastaCero(5); // Imprime: 5, 4, 3, 2, 1, 0
 
@@ -47,7 +43,6 @@ function repetirMensaje() {
     contador++;
   } while (contador < 5);
 }
-
 // Imprimir
 repetirMensaje();
 
@@ -59,7 +54,6 @@ function imprimirNumerosPares(numero) {
     }
   }
 }
-
 // Imprimir
 imprimirNumerosPares(10); // Imprime: 0, 2, 4, 6, 8, 10
 
@@ -72,7 +66,6 @@ function detenerEnSeis() {
     console.log(i);
   }
 }
-
 // Imprimir
 detenerEnSeis(); // Imprime: 1, 2, 3, 4, 5
 
@@ -85,7 +78,6 @@ function saltarCinco() {
     console.log(i);
   }
 }
-
 // Imprimir
 saltarCinco(); // Imprime: 1, 2, 3, 4, 6, 7, 8, 9, 10
 
@@ -119,11 +111,10 @@ function obtenerDiaDeLaSemana(numero) {
   }
   return dia;
 }
-
 // Imprimir
-console.log(obtenerDiaDeLaSemana(1)); // "Lunes"
-console.log(obtenerDiaDeLaSemana(5)); // "Viernes"
-console.log(obtenerDiaDeLaSemana(7)); // "Domingo"
+console.log(obtenerDiaDeLaSemana(1));  // "Lunes"
+console.log(obtenerDiaDeLaSemana(5));  // "Viernes"
+console.log(obtenerDiaDeLaSemana(7));  // "Domingo"
 console.log(obtenerDiaDeLaSemana(10)); // "Número inválido"
 
 // Ejercicio 9: Switch con múltiples casos
@@ -142,7 +133,6 @@ function esVocal(caracter) {
   }
   return esVocal;
 }
-
 // Ejemplo de uso
 console.log(esVocal('a')); // true
 console.log(esVocal('b')); // false
@@ -156,16 +146,7 @@ function evaluarNumeros(a, b, c) {
   } else if (a < 0 && b < 0 && c < 0) {
     console.log("Todos los números son negativos");
   } else if (a < 0 || b < 0 || c < 0) {
-    console.log("Al menos uno de los números es negativo");
-  } else {
-    console.log("Hay una combinación de positivos y negativos");
-  }
-}
-
-// Imprimir
-evaluarNumeros(1, 2, 3);    // "Todos los números son positivos"
-evaluarNumeros(-1, 2, 3);   // "Al menos uno de los números es negativo"
-evaluarNumeros(-1, -2, -3); // "Todos los números son negativos"
+    console.log("Al menos uno de los números es
 
 // Exportar todas las funciones
 export {
