@@ -1,3 +1,4 @@
+
 // Ejercicio 1: Condicionales if-else
 function verificarParImpar(numero) {
   if (numero % 2 === 0) {
@@ -12,7 +13,7 @@ verificarParImpar(7);  // "El número es impar"
 verificarParImpar(10); // "El número es par"
 
 // Ejercicio 2: Condicionales anidados
-function determinarCategoriaEdad(edad) {
+function clasificarEdad(edad) {
   if (edad < 18) {
     console.log("Menor de edad");
   } else if (edad >= 18 && edad <= 65) {
@@ -28,7 +29,7 @@ determinarCategoriaEdad(30);  // "Adulto"
 determinarCategoriaEdad(70);  // "Adulto mayor"
 
 // Ejercicio 3: Bucles while
-function imprimirHastaCero(numero) {
+function cuentaRegresiva(numero) {
   while (numero >= 0) {
     console.log(numero);
     numero--;
@@ -120,9 +121,9 @@ function obtenerDiaDeLaSemana(numero) {
 }
 
 // Imprimir
-console.log(obtenerDiaDeLaSemana(1));  // "Lunes"
-console.log(obtenerDiaDeLaSemana(5));  // "Viernes"
-console.log(obtenerDiaDeLaSemana(7));  // "Domingo"
+console.log(obtenerDiaDeLaSemana(1)); // "Lunes"
+console.log(obtenerDiaDeLaSemana(5)); // "Viernes"
+console.log(obtenerDiaDeLaSemana(7)); // "Domingo"
 console.log(obtenerDiaDeLaSemana(10)); // "Número inválido"
 
 // Ejercicio 9: Switch con múltiples casos
@@ -161,6 +162,21 @@ function evaluarNumeros(a, b, c) {
   }
 }
 
-// Ejemplo de uso
+// Imprimir
 evaluarNumeros(1, 2, 3);    // "Todos los números son positivos"
-evaluarNumeros(-1, 2, 3);   // "Al menos
+evaluarNumeros(-1, 2, 3);   // "Al menos uno de los números es negativo"
+evaluarNumeros(-1, -2, -3); // "Todos los números son negativos"
+
+// Exportar todas las funciones
+export {
+  verificarParImpar,
+  clasificarEdad,
+  cuentaRegresiva,
+  repetirMensaje,
+  imprimirNumerosPares,
+  detenerEnSeis,
+  saltarCinco,
+  obtenerDiaDeLaSemana,
+  esVocal,
+  evaluarNumeros,
+};
